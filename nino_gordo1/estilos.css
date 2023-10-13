@@ -1,0 +1,110 @@
+
+body {
+    background-color: #2F2F2F;
+}
+
+.navbar {
+    background-color: #2F2F2F;
+}
+
+.nav-link {
+    color: #FEEFE5;
+}
+
+.icon-link {
+    color: #FEEFE5;
+}
+
+
+.hero_home {
+    min-height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,.5),rgba(0,0,0,.5)),url('/img/hero.png');
+    background-size: cover;
+    position: relative;
+    border-radius: 5px;
+    
+}
+
+.btn_hero {
+    color: #FEEFE5;
+}
+
+.btn_hero:hover {
+    color: #BC181D;
+}
+
+#menu_onepage {
+    margin-top: 95px;
+}
+
+.img_menu {
+    background-color: #BC181D;
+    height: 997px;
+    width: 870px;
+}
+
+.img_arcade {
+    margin-left: 20px;
+    background-color: #dfad09;
+    height: 997px;
+    width: 410px;
+}
+
+#intro_cards {
+    margin-top: 95px;
+}
+
+.card {
+    height: 400px;
+}
+
+#info_contacto {
+    margin-top: 95px;
+}
+
+.tel_contacto {
+    background-color: #BC181D;
+    height: 314px;
+    width: 870px;
+}
+
+.img_mapa {
+    background-color: #dfad09;
+    height: 314px;
+    width: 410px;
+    margin-left: 20px;
+}
+
+#carrusel {
+    margin-top: 150px;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+#music {
+    margin-top: 95px;
+}
+
+.spotify {
+    background-color: #BC181D;
+    height: 250px;
+}
+
+.redes {
+    background-color: #dfad09;
+    height: 250px;
+}
+
+footer {
+    background-color: #BC181D;
+    margin-top: 150px;
+    height: 70px;
+}
+
+.footer_texto h5 {
+    width: 500px;
+    text-align: center;
+    margin-top: 20px;
+}

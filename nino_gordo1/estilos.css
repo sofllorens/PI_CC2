@@ -1,110 +1,344 @@
+.font1 {
+    font-family: 'bungee';
+}
+
+.font2 {
+    font-family: 'puffin display';
+}
+
 
 body {
-    background-color: #2F2F2F;
+    background-color: #1c1c1c;
+}
+
+/* HEADER */
+
+.secciones_nav {
+    padding-right: 90px;
 }
 
 .navbar {
-    background-color: #2F2F2F;
+    background-color: #1c1c1c;
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.067);
+}
+
+.navbar-brand {
+    color: #BC181D;
+}
+
+.navbar-brand:hover {
+    color: #950000;
+}
+
+.btn {
+    border-color: #950000;
+}
+
+.btn:hover {
+    background-color: #950000;
 }
 
 .nav-link {
     color: #FEEFE5;
 }
 
-.icon-link {
-    color: #FEEFE5;
+.nav-link:hover {
+    color: #BC181D;
 }
 
+.icon-link {
+    color: #FEEFE5;
+    padding: 15px;
+}
+
+.icon-link:hover {
+    color: #BC181D;
+}
+
+/* HERO */
 
 .hero_home {
-    min-height: 90vh;
-    background-image: linear-gradient(0deg, rgba(0,0,0,.5),rgba(0,0,0,.5)),url('/img/hero.png');
+    min-height: 95vh;
+    object-fit: cover; /* Esto evita que el GIF se deforme */
+    background-image: linear-gradient(0deg, rgba(0,0,0,.5),rgba(0,0,0,.5)),url('./img/gif_hero.gif');
     background-size: cover;
-    position: relative;
     border-radius: 5px;
     
 }
 
 .btn_hero {
     color: #FEEFE5;
+    margin: 50px;
+    border-color: #BC181D;
+    height: 60px;
+    width: 234px;
+    background: rgba(0, 0, 0, 0.526);
+    
 }
 
 .btn_hero:hover {
-    color: #BC181D;
+    color: #FEEFE5;
+    background-color: #BC181D;
+
 }
+
+/* MENU */
+
+.accordion-item {
+    background-color: #1c1c1c; /* Puedes cambiar el color según tus preferencias */
+    border-color:#650404;
+}
+
+
+/* Color del texto del acordeón cuando está cerrado */
+.accordion-button:not(.collapsed) {
+    color: #BC181D; /* Puedes cambiar el color según tus preferencias */
+    background-color: #1c1c1c;
+}
+
+/* Color del texto del acordeón cuando está abierto */
+.accordion-button.collapsed {
+    color: #BC181D;
+    background-color: #1c1c1c;
+}
+
 
 #menu_onepage {
     margin-top: 95px;
 }
 
-.img_menu {
+
+
+.titulos_menu {
+    font-family: 'bungee';
+}
+
+.subtitulos_menu {
     background-color: #BC181D;
-    height: 997px;
-    width: 870px;
+    border-radius: 10px;
+    color: #FEEFE5;
+    font-family: 'bungee';
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
 }
 
-.img_arcade {
-    margin-left: 20px;
-    background-color: #dfad09;
-    height: 997px;
-    width: 410px;
+.texto_menu {
+    font-family: 'puffin display';
+    text-align: center;
+    padding: 10px;
+    color: #FEEFE5;
 }
 
-#intro_cards {
-    margin-top: 95px;
-}
-
-.card {
-    height: 400px;
-}
+/* CONTACTO */
 
 #info_contacto {
     margin-top: 95px;
 }
 
-.tel_contacto {
-    background-color: #BC181D;
-    height: 314px;
-    width: 870px;
+.box_general {
+    border:2px solid #bc181e5f;
+    border-radius: 10px;
+}
+
+.box_contacto1 {
+    color: #e1e1e1;
+    font-family: 'puffin display';
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border:1px solid #bc181e5f;
 }
 
 .img_mapa {
-    background-color: #dfad09;
-    height: 314px;
-    width: 410px;
-    margin-left: 20px;
+    padding: 20px;
 }
 
-#carrusel {
-    margin-top: 150px;
+#reservarBtn2 {
+    text-decoration: none;
+    color: #e1e1e1;
 }
+
+/* QUIENES SOMOS */
+
+#intro_cards {
+    margin: 95px;
+}
+
+.container_luces1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.container_luces1::before {
+    content: '';
+    position: absolute;
+    width: 320px;
+    height: 300px; 
+    background: radial-gradient(circle, rgba(109, 8, 11, 0.636) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+.container_luces2 {
+    position: relative;
+}
+
+.container_luces2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 250px;
+    height: 280px; 
+    background: radial-gradient(circle, rgba(109, 8, 11, 0.636) 0%, rgba(0, 0, 0, 0) 90%);
+}
+
+.container_luces3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.container_luces3::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 300px;
+    height: 300px; 
+    background: radial-gradient(circle, rgba(109, 8, 11, 0.636) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+
+.card {
+    background: rgba(0, 0, 0, 0.051);
+    backdrop-filter: blur(50px);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-color: #bc181e40;
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #BC181D;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.card-text {
+    color: #e1e1e1;
+    font-size: 19px;
+    margin: 10px;
+    min-height: 120px;
+}
+
+.hidden-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    color: #e1e1e1;
+    font-family: 'puffin display';
+    font-size: 19px;
+    margin: 20px;
+}
+
+.btn-mostrar {
+    color: #e1e1e1;
+    border-radius: 0 0 10px 10px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.051);
+    font-family: 'puffin display';
+    font-weight: bold;
+    border-color: #bc181e40;
+}
+
+.btn-mostrar:hover {
+    color: #FEEFE5;
+    background-color: #BC181D;
+}
+
+
+/* GALERÍA */
+
 
 .img-fluid {
     border-radius: 10px;
+    transition: transform 0.3s ease; /* Agregar una transición suave */
+
 }
+
+.img-fluid:hover {
+    transform: scale(1.2); /* Aumentar el tamaño al 120% */
+}
+
+.carousel-control-prev {
+    background: rgb(28,28,28);
+    background: linear-gradient(90deg, rgba(28,28,28,1) 56%, rgba(0,0,0,0) 100%);
+}
+
+.carousel-control-next {
+    background: rgb(28,28,28);
+    background: linear-gradient(270deg, rgba(28,28,28,1) 56%, rgba(0,0,0,0) 100%);
+}
+
+/* SPOTIFY Y REDES */
 
 #music {
     margin-top: 95px;
 }
 
-.spotify {
-    background-color: #BC181D;
-    height: 250px;
+#music h5 {
+    margin-bottom: 30px;
 }
 
-.redes {
-    background-color: #dfad09;
-    height: 250px;
+.spotify {
+    color: #FEEFE5;
 }
+
+.btn-success{
+    height: 70px;
+    width: 230px;
+    border-radius: 30px;
+    font-family: 'puffin display';
+    font-size: 24px;
+    background-color: #1c1c1c;
+    border:1px solid #1d8954;
+    transition: background-color;
+    transition-duration: 1s;
+}
+
+.btn-success:hover {
+    background-color: #1d8954;
+}
+
+.bi-spotify{
+    margin-right: 10px;
+}
+
+#redes {
+    color: #FEEFE5;
+}
+
+.iconos-redes {
+    margin-top: 50px;
+}
+
+.icon-link2 {
+    color: #FEEFE5;
+    padding: 15px;
+}
+
+.icon-link2:hover {
+    color: #BC181D;
+}
+
+/* FOOTER */
 
 footer {
     background-color: #BC181D;
-    margin-top: 150px;
-    height: 70px;
+    margin-top: 30px;
+    height: auto;
 }
 
 .footer_texto h5 {
     width: 500px;
     text-align: center;
-    margin-top: 20px;
+    padding: 20px;
 }
